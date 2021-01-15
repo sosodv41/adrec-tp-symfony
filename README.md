@@ -10,7 +10,7 @@ La branche devra se nommer : tp-1-votre_prenom
 
 Une fois le projet créer, lancer un serveur PHP afin de tester que tout fonctionne !
 <br>
-
+<br>
 /2 Maintenant, vous allez intégrer Webpack avec Yarn et ajouter Bootstrap au projet.
 Il faudra utiliser un fichier qui regroupera tout les scss (styles.scss) et un fichier qui regroupera le Javascript (script.js), ils seront... probablement à créer ?
 On gardera une logique au niveau de l'organisation des dossiers, séparés entre les *styles et les scripts*.
@@ -23,7 +23,7 @@ Modifier aussi le base.html.twig pour intégrer un footer et un header, et bien 
 
 Vous remplirez le header et le footer avec... ce qui vous passe par la tête ? Etonnez moi, utilisez Bootstrap pour faire un menu ou autre, lâchez-vous :)
 <br>
-
+<br>
 3/ Une fois que la structure de l'application est en place, on peut attaquer le vif du sujet :
 
 Vous devrez me créer les entités relatives à la base de données music-shop, vu en cours de SQL.
@@ -51,12 +51,12 @@ Bien entendu, je veux le fichier de migration permettant de créer la base de do
 
 Pas besoin de tester les entités pour le moment, on le fera avec le CRUD... à venir ! Le fichier de migration me suffira pour valider les entités.
 <br>
-
+<br>
 4/ Et bien.. il est temps de créer le CRUD pour chaque entité.
 
 Je veux que les vues soient "jolies", c'est à dire ne pas me laisser celles par défaut.
 <br>
-
+<br>
 /5 Les finalisations...
 C'est bien, mais les vues ne sont pas reliées réellement entre elles là, je veux un menu Admin (sans restriction d'accès) dans lequel je peux accèder au CRUD de chaque entité, et revenir sur la page admin classique.
 
