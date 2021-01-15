@@ -30,21 +30,21 @@ Vous devrez me créer les entités relatives à la base de données music-shop, 
 
 Rappel de celle-ci :
 - Album :
-> name : string (255) not null
-> published_year : integer nullable
+> name : string (255) not null<br>
+> published_year : integer nullable<br>
 > price : float not null
 
 - Artiste :
-> name : string (255) not null
-> nationality : string nullable
+> name : string (255) not null<br>
+> nationality : string nullable<br>
 > beginning_year : integer nullable
 
 - Genre :
 > name : string (255) not null
 
 - Song :
-> name : string (255) not null
-> duration : string (6) not null
+> name : string (255) not null<br>
+> duration : string (6) not null<br>
 > price : float not null
 
 Bien entendu, je veux le fichier de migration permettant de créer la base de données relative à ces entités. La base de données à utiliser sera nommée : *music-shop-symfo*
