@@ -63,3 +63,10 @@ C'est bien, mais les vues ne sont pas reliées réellement entre elles là, je v
 Je veux que par défaut lorsque l'on arrive sur le site, on voit la liste de tous les albums.
 
 Et, car il faut bien que vous en fassiez, je veux une requête DQL qui permette de récupérer les artistes par nationality
+<br>
+<br>
+6/ Finalisation²
+
+Vous êtes libre, faites ce que vous voulez sur le "site", au niveazu graphisme, cheminement des routes etc.
+C'est du bonus !
+
