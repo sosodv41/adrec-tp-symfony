@@ -28,7 +28,7 @@ Vous remplirez le header et le footer avec... ce qui vous passe par la tête ? E
 
 Vous devrez me créer les entités relatives à la base de données music-shop, vu en cours de SQL.
 
-Rappel de celle-ci :
+Rappel de celles-ci :
 - Album :
 > name : string (255) not null<br>
 > published_year : integer nullable<br>
@@ -69,4 +69,5 @@ Et, car il faut bien que vous en fassiez, je veux une requête DQL qui permette 
 
 Vous êtes libre, faites ce que vous voulez sur le "site", au niveazu graphisme, cheminement des routes etc.
 C'est du bonus !
+(Si vous vous sentez chaud, incluez fontawsome à Webpack pour mettre des icônes sur les boutons ;) Mais pour ça je vous invite à chercher !)
 
