@@ -2,12 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-
-        {% block javascripts %}{% endblock %}
+        <title>{% block title %}tp symfony{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('styles') }}
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% include 'header.html.twig' %}
+
+        {% block body %}
+
+            <hr>
+            <div class="body">
+                <p>ici se trouve le body</p>
+            </div>
+
+
+
+
+
+
+        {% endblock %}
+
+
+
+<div class="text-center">
+        {% include 'footer.html.twig' %}
+</div>
+        {% block javascripts %}
+            {{ encore_entry_script_tags('scripts') }}
+        {% endblock %}
     </body>
 </html>
