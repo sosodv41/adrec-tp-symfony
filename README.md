@@ -69,5 +69,6 @@ Et, car il faut bien que vous en fassiez, je veux une requête DQL qui permette 
 
 Vous êtes libre, faites ce que vous voulez sur le "site", au niveazu graphisme, cheminement des routes etc.
 C'est du bonus !
+<br>
 (Si vous vous sentez chaud, incluez fontawsome à Webpack pour mettre des icônes sur les boutons ;) Mais pour ça je vous invite à chercher !)
 
