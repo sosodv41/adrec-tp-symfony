@@ -6,18 +6,19 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('styles') }}
         {% endblock %}
+    </head>
 
+    <body>
         {% include 'header.html.twig' %}
-
-
-
+        
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
         {% include 'footer.html.twig' %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('scripts') }}
         {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
     </body>
+
 </html>

@@ -1,12 +1,18 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <a class="navbar-brand" href="/">Music Shop</a>
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('album_index') }}">Albums</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="{{ path('artist_index') }}">Artists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('genre_index') }}">Genres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('song_index') }}">Songs</a>
             </li>
         </ul>
     </nav>

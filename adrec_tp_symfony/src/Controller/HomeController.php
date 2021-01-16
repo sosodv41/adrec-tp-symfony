@@ -15,7 +15,7 @@ class HomeController extends AbstractController
      */
     public function homePage(): Response
     {
-        return $this->render('pages/home.html.twig', [
+        return $this->render('home.html.twig', [
             'date' => new \DateTime(),
         ]);
     }

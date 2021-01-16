@@ -1,0 +1,26 @@
+
+
+
+.section-header-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacer 0;
+    border-bottom: solid 2px $gray-600;
+}
+
+.header-buttons-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .btn {
+        margin-left: $spacer;
+    }
+}
+
+.section-footer-action {
+    padding: $spacer 0;
+    border-top: solid 2px $gray-600;
+    margin-top: $spacer * 2;
+}

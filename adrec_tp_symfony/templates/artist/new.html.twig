@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}New Artist{% endblock %}
+
+{% block body %}
+    <div class="section-header-action mb-4">
+        <h1>Créer un nouvel Artiste</h1>
+        <a class="btn btn-secondary" href="{{ path('artist_index') }}">Retour à la liste des Artistes</a>
+    </div>
+
+    {{ include('artist/_form.html.twig') }}
+
+{% endblock %}

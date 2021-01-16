@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Album index{% endblock %}
+
+{% block body %}
+    <div class="section-header-action">
+        <h1>Albums</h1>
+        <a class="btn btn-primary" href="{{ path('album_new') }}">Ajouter un nouvel Album</a>
+    </div>
+
+    <table class="table table-dark table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Published_year</th>
+                <th>Price</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for album in albums %}
+            <tr>
+                <td>{{ album.id }}</td>
+                <td>{{ album.name }}</td>
+                <td>{{ album.publishedYear }}</td>
+                <td>{{ album.price }}</td>
+                <td>
+                    <a href="{{ path('album_show', {'id': album.id}) }}">Détails</a> |
+                    <a href="{{ path('album_edit', {'id': album.id}) }}">Editer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no album found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    
+{% endblock %}

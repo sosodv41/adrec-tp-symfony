@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Song index{% endblock %}
+
+{% block body %}
+    <div class="section-header-action">
+        <h1>Chansons</h1>
+        <a class="btn btn-primary" href="{{ path('song_new') }}">Ajouter une nouvelle chanson</a>
+    </div>
+
+    <table class="table table-dark table-striped ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for song in songs %}
+            <tr>
+                <td>{{ song.id }}</td>
+                <td>{{ song.name }}</td>
+                <td>{{ song.duration }}</td>
+                <td>{{ song.price }}</td>
+                <td>
+                    <a href="{{ path('song_show', {'id': song.id}) }}">Détails</a> |
+                    <a href="{{ path('song_edit', {'id': song.id}) }}">Editer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
