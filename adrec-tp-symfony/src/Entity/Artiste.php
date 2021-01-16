@@ -61,6 +61,9 @@ class Artiste
         return $this;
     }
 
+
+
+
     public function getBeginningYear(): ?int
     {
         return $this->beginning_year;

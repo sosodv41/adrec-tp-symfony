@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Artiste;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use phpDocumentor\Reflection\Types\String_;
 
 /**
  * @method Artiste|null find($id, $lockMode = null, $lockVersion = null)
@@ -19,22 +20,21 @@ class ArtisteRepository extends ServiceEntityRepository
         parent::__construct($registry, Artiste::class);
     }
 
-    // /**
-    //  * @return Artiste[] Returns an array of Artiste objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * //  * @return Artiste[] Returns an array of Artiste nationality
+     * //  */
+
+    public function findByNationality($nationality)
     {
         return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
+            ->where('a.nationality = :nationality')
+            ->setParameter('nationality', $nationality)
             ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
             ->getQuery()
-            ->getResult()
-        ;
+            ->getResult();
     }
-    */
+
+
 
     /*
     public function findOneBySomeField($value): ?Artiste
