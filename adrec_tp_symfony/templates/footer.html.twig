@@ -1,0 +1,7 @@
+<footer class="footer">
+    <div class="container">
+        {% if date is defined %}
+            <span class="text-muted">Date du jour : {{ date|date('d/m/Y') }}</span>
+        {% endif %}
+    </div>
+</footer>
