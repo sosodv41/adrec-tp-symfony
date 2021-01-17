@@ -10,7 +10,6 @@
     <div class="section-header-action">
         <h1>Liste des albums</h1>
     </div>
-
     {% if albums|length > 0 %}
         <ul class="list-group list-group-flush">
             {% for album in albums %}
@@ -25,6 +24,27 @@
         </ul>
     {% else %}
         <p>Aucun Album, sorry</p>
+    {% endif %}
+
+    <hr>
+
+    <div class="section-header-action">
+        <h1>Liste des artistes <small>(par nationnalité)</small></h1>
+    </div>
+    {% if artists|length > 0 %}
+        <ul class="list-group list-group-flush">
+            {% for artist in artists %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>
+                        {{ artist.name }}
+                        <span class="ml-3 text-muted">{{ artist.nationality }}</span>
+                    </span>
+                    <span class="badge badge-primary badge-pill"> {{ artist.beginningYear }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucun Artistes, sorry</p>
     {% endif %}
 
 {% endblock %}
