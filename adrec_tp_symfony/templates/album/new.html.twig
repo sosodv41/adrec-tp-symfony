@@ -6,7 +6,7 @@
 {% block body %}
     <div class="section-header-action mb-4">
         <h1>Créer un nouvel Album</h1>
-        <a class="btn btn-secondary" href="{{ path('album_index') }}">Retour à la liste des Albums</a>
+        <a class="btn btn-secondary" href="{{ path('album_index') }}"><i class="fas fa-arrow-circle-left"></i> Retour à la liste des Albums</a>
     </div>
 
     {{ include('album/_form.html.twig') }}

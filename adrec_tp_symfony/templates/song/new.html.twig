@@ -6,7 +6,7 @@
 {% block body %}
     <div class="section-header-action mb-4">
         <h1>Créer une nouvelle Chanson</h1>
-        <a class="btn btn-secondary" href="{{ path('song_index') }}">Retour à la liste des Chansons</a>
+        <a class="btn btn-secondary" href="{{ path('song_index') }}"><i class="fas fa-arrow-circle-left"></i> Retour à la liste des Chansons</a>
     </div>
 
     {{ include('song/_form.html.twig') }}

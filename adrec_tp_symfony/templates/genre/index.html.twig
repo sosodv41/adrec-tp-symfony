@@ -5,7 +5,7 @@
 {% block body %}
     <div class="section-header-action">
         <h1>Genres</h1>
-        <a class="btn btn-primary" href="{{ path('genre_new') }}">Ajouter un nouveau Genre</a>
+        <a class="btn btn-primary" href="{{ path('genre_new') }}"><i class="fas fa-plus-circle"></i> Ajouter un nouveau Genre</a>
     </div>
 
     <table class="table table-dark table-striped ">
@@ -22,8 +22,8 @@
                 <td>{{ genre.id }}</td>
                 <td>{{ genre.name }}</td>
                 <td>
-                    <a href="{{ path('genre_show', {'id': genre.id}) }}">Détails</a> |
-                    <a href="{{ path('genre_edit', {'id': genre.id}) }}">Editer</a>
+                    <a href="{{ path('genre_show', {'id': genre.id}) }}"><i class="fas fa-eye"></i> Détails</a> |
+                    <a href="{{ path('genre_edit', {'id': genre.id}) }}"><i class="fas fa-pen"></i> Editer</a>
                 </td>
             </tr>
         {% else %}
