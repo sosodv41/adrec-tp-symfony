@@ -1,8 +1,8 @@
 
-.idea
-
 ###> symfony/framework-bundle ###
-.env
+/yarn.lock
+/.idea
+/.env
 /.env.local
 /.env.local.php
 /.env.*.local

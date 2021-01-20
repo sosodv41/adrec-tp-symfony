@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Welcome everybody!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('styles') }}
+        {% endblock %}
 
-        {% block javascripts %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% include 'header.html.twig' %}
+
+        <div class="text-center">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+
+        {% include 'footer.html.twig' %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('scripts') }}
+        {% endblock %}
     </body>
 </html>
