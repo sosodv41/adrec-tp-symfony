@@ -1,14 +1,20 @@
 <?php
 
 
-class HomeController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
+namespace App\Controller;
+
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class HomeController extends AbstractController
 {
     /**
-     * @\Symfony\Component\Routing\Annotation\Route(path="/", name="home_page")
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route(path="/", name="home_page")
      */
-    public function homePage() : \Symfony\Component\HttpFoundation\Response
+    public function homePage(): Response
     {
-
+        return $this->render('base.html.twig');
     }
 }
