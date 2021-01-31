@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Super titre{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('styles') }}
+    {% endblock %}
+</head>
+<body>
+<div class="text-center">
+    {% include 'header.html.twig' %}
+</div>
+
+<div class="container col-8">
+    {% block body %}
+        <p>Body de test de base.html.twig</p>
+    {% endblock %}
+</div>
+
+<div class="text-center">
+    {% include 'footer.html.twig' %}
+</div>
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('scripts') }}
+{% endblock %}
+</body>
+</html>
